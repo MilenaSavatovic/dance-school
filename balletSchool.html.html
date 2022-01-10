@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ballet studio</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #363434;
+      }
+      h2 {
+        text-align: center;
+        color: #62929a;
+      }
+      p {
+        text-align: justify;
+        color: black;
+        padding-top: 10px;
+        line-height: 20px;
+      }
+      hr {
+        color: #62929a;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: #363434;
+        transition: all 200ms ease-in-out;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-weight: bold;
+        color: #62929a;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        font-size: large;
+        background: #62929a;
+        color: whitesmoke;
+        border: none;
+        line-height: 36px;
+        padding: 5px 15px;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        margin: 20px auto;
+        max-width: 900px;
+        border: solid white 1px;
+        border-radius: 4px;
+        background: linear-gradient(120deg, #efecec 0%, #b6b3b3 100%);
+
+        padding: 15px 90px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🩰
+
+        <br />
+        CDS studio
+      </h1>
+      <h2>Best studio in town</h2>
+      <p>
+        <strong>Ballet</strong>
+        <em>(French: [balɛ])</em>
+        is a type of performance dance that originated during the Italian
+        Renaissance in the fifteenth century and later developed into a concert
+        dance form in France and Russia. It has since become a widespread and
+        highly technical form of dance with its own vocabulary. Ballet has been
+        influential globally and has defined the foundational techniques which
+        are used in many other dance genres and cultures. Various schools around
+        the world have incorporated their own cultures. As a result ballet has
+        evolved in distinct ways.
+      </p>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/629/original/Dance-Banner.jpg.opt760x257o00s760x257.jpg?1637828406"
+        alt="ballet"
+      />
+      <p>
+        At
+        <span>CDS</span>
+        you have a chance to be taught by a renown dance teacher
+        <span>Vesna Secerov.</span>
+        More about our studio you can find on our Instagram page
+
+        <a
+          href="https://www.instagram.com/cds_citydancestudio/?hl=en"
+          target="_blank"
+        >
+          cds_citydancestudio.
+        </a>
+      </p>
+      <button>Dance with us</button>
+    </div>
+    <script>
+      function enrol() {
+        let firstName = prompt('Please enter your first name.')
+        let lastName = prompt('Please enter your last name.')
+        let age = prompt('Please enter your age.')
+
+        if (age >= 15) {
+          alert('Hi ' + firstName + ' ' + lastName + '. Welcome to CDS!')
+        } else {
+          alert(
+            firstName + ' ' + lastName + ' your parents have to contact us.')
+        }
+      }
+      let enrolButton = document.querySelector('button')
+      enrolButton.addEventListener('click', enrol)
+    </script>
+  </body>
+</html>
